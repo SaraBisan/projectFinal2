@@ -1,0 +1,52 @@
+﻿.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    direction: rtl;
+}
+/* ----- מפת האתר ----- */
+.sitemap-tree {
+    margin-top: 1rem;
+    direction: rtl;
+    list-style-position: inside;   /* התבליט צמוד לטקסט, לא בקצה */
+    padding: 0;
+}
+.sitemap-tree > li {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* תת-הרשימות */
+.sitemap-tree ul {
+    direction: rtl;
+    list-style-position: inside;
+    margin-right: 1.5rem;     /* הזחה מימין */
+    margin-left: 0;
+    padding: 0;
+}
+.sitemap-tree a {
+    color: #46685e;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sitemap-tree a:hover {
+    color: #f8ebb5;
+}
+
+
+.sitemap-tree ul li {
+    direction: rtl;
+    list-style-position: inside;       /* תבליט לתת-העמודים */
+}
+
+/* קישורים לעמודים שטרם פותחו — חסומים מלחיצה */
+a.locked {
+    color: #535a1b;
+    pointer-events: none;     /* לא ניתן ללחוץ */
+    cursor: not-allowed;
+    border-bottom: 1px dotted #d6c9b6;
+}
+a.locked::after {
+    content: ' (בקרוב)';      /* פסאודו-אלמנט שמוסיף "בקרוב" */
+    font-size: 0.8rem;
+}

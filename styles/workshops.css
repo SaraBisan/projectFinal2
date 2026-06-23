@@ -1,0 +1,252 @@
+﻿body {
+    background-color: #efefe9;
+}
+/* ----- כותרת עליונה ----- */
+.site-header {
+    background-color: #F0EFE8;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* z-index — שכבות; דורש position */
+}
+.header-inner {
+    padding: 0.9rem 0;
+}
+
+/* ניקוי floats — חובה כדי שה-header יקיף את הלוגו והתפריט */
+.header-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* לוגו — מימין */
+.logo {
+    float: right;
+}
+.logo img {
+    display: block;
+    height: 100px;   /* גודל הלוגו */
+    width: auto;
+}
+
+
+/* מרכוז אנכי של התפריט מול הלוגו */
+.main-nav {
+    float: left;
+    margin-top: 20px; /* כוונני עד שהתפריט מתיישר עם מרכז הלוגו */
+    margin-left: 30px;
+}
+
+
+/* תפריט ניווט ראשי — צף לשמאל, פריטים זה לצד זה */
+.main-nav {
+    float: left;
+}
+.main-nav ul {
+    direction: rtl;     /* כאן — זה מה שקובע את סדר הפריטים */
+}
+.main-nav li {
+    display: inline-block;
+    direction: rtl;
+}
+.main-nav a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    color: #232501;
+    text-decoration: none;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #b2bc8a;
+}
+
+.main-nav a.active {
+    background-color: #5a0303;
+    color: #fbf8f3;
+}
+
+/* ----- אזור גיבור (hero) ----- */
+.container{
+   width: 100%;
+  
+}
+.hero {
+    background: #efefe9;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: row-reverse;   /* ← זה מה שמהפך את הסדר */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+/* טור הטקסט — מימין */
+.hero-text {
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin: 5rem 5rem;
+}
+
+.hero-text h1 {
+    margin-bottom: 1.5rem;
+    font-size: large;
+
+}
+.hero-text p {
+    font-size: 1.15rem;
+    color: #5c5247;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ===== פלייר הסדנאות בסגנון Studio Sara ===== */
+
+/* פונט מסולסל לכותרת (הטמעה מ-Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.flyer {
+    background-color: #efe9e0;
+    border: 4px solid #34498f;     /* מסגרת כחולה */
+    border-radius: 40px;           /* פינות מעוגלות (דומה לקו הגלי) */
+    padding: 2.5rem 2rem;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    color: #34498f;
+}
+
+/* כותרת מסולסלת גדולה */
+.flyer-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #34498f;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+.flyer-sub {
+    letter-spacing: 0.3em;
+    color: #b08d2e;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.flyer-slogan {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* כותרות הקטעים בתוך הפלייר */
+.flyer-block-title {
+    font-size: 1.3rem;
+    color: #34498f;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+/* רשימות הפרטים */
+.flyer-list {
+    display: inline-block;
+    text-align: right;
+    direction: rtl;
+    margin: 0 auto 0.5rem;
+}
+.flyer-list li {
+    list-style: disc;
+    margin-right: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+.flyer-list strong { color: #8f5239; }
+
+.flyer-note {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 1rem 0;
+}
+
+/* קריאה לפעולה */
+.flyer-cta {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+.flyer-cta-sub {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* פרטי קשר */
+.flyer-contact {
+    border-top: 2px solid #34498f;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+.flyer-contact a { color: #34498f; text-decoration: underline; }
+.flyer-insta { font-weight: 700; letter-spacing: 0.1em;    }
+
+.after-flyer { text-align: center; margin-top: 1.5rem; }
+/*footer*/
+.site-footer {
+    background-color: #2c2620;   /* רקע כהה */
+    color: #efe9e0;              /* טקסט בהיר */
+    padding: 2.5rem 0 1.5rem;
+    margin-top: 3rem;
+
+}
+
+/* שלוש העמודות — זו לצד זו עם float */
+.footer-grid > div,
+.footer-grid > nav {
+    float: right;
+    width: 31%;
+    margin-left: 3.5%;
+  
+  
+}
+.footer-grid > *:last-child {
+    margin-left: 0;             /* העמודה השמאלית — בלי רווח שמאלי */
+}
+
+.site-footer h3 {
+    color: #fbf8f3;
+    margin-bottom: 0.7rem;
+}
+.site-footer a {
+    color: #e5dccf;
+}
+.site-footer a:hover {
+    color: #9da661;
+}
+/* שורת זכויות יוצרים בתחתית */
+.footer-bottom {
+    clear: both;               /* יורד מתחת לשלוש העמודות */
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #4a4138;
+    font-size: 0.85rem;
+    color: #d6c9b6;
+}
+
+/* ניקוי floats כדי שה-footer יקיף את העמודות */
+.footer-grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+<!-- ===== כותרת עליונה + ניווט ראשי ===== -->
+<header class="site-header">
+    <div class="container header-inner">
+        <!-- בדף הבית הלוגו הוא ה-h1 של העמוד -->
+        <h1 class="logo">
+            <img src="images/logo.pdf.png" alt=" סטודיו לקרמיקה" />
+        </h1>
+        <nav class="main-nav" aria-label="ניווט ראשי">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">דף הבית</a></li>
+                <li><a href="gallry.html">הגלריה</a></li>
+                <li><a href="workShops.html">סדנאות</a></li>
+                <li><a href="aboutUs.html">אודות</a></li>
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- ===== אזור גיבור ===== -->
+<section class="hero" aria-label="ברוכים הבאים">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>קרמיקה בעבודת יד, מהאדמה לשולחן שלכם</h1>
+            <p>כל כלי נוצר באובניים אצלנו בסטודיו — איטי, ייחודי, ולא לגמרי מושלם. בדיוק כמו שצריך.</p>
+            <p>
+                <a href="gallry.html" class="btn">לגלריית העבודות</a>
+                <a href="workShops.html" class="btn btn-glaze">להרשמה לסדנה</a>
+            </p>
+        </div> <!-- ← הוספתי: סוגר את hero-text -->
+        <div class="hero-img" >
+            <video class="hero-video" autoplay muted loop playsinline >
+                <source src="video/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div> <!-- סוגר את hero-inner -->
+</section>
+<main>
+    <section class="section">
+        <div class="container">
+            <h2>מה תמצאו אצלנו</h2>
+            <p class="lead">סטודיו קטן שבו כל פריט נעשה בעבודת יד, ושבו אפשר גם ללמוד וליצור בעצמכם.</p>
+            <div class="cards">
+                <article class="card">
+                    <h3>כלים לבית</h3>
+                    <p>קערות, ספלים, צלחות וכדים — כלים שימושיים ויפים לשימוש יומיומי.</p>
+                </article>
+                <article class="card">
+                    <h3>סדנאות</h3>
+                    <p>סדנאות אובניים ובנייה ביד למתחילים ומתקדמים, ליחידים ולזוגות.</p>
+                </article>
+                <article class="card">
+                    <h3>הזמנות אישיות</h3>
+                    <p>סטים לאירועים, מתנות ומיתוג למסעדות — בתיאום אישי מולנו.</p>
+                    
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container with-aside">
+            <div class="prose">
+                <h2>מהאדמה ליצירה</h2>
+                <p>
+                    הסטודיו נולד מתוך אהבה לחומר ולמלאכה. אנחנו עובדים עם חרס מקומי,
+                    מזגגים בעבודת יד, ושורפים בתנור הסטודיו. התוצאה היא כלים שכל אחד מהם
+                    מעט שונה מחברו — וזה בדיוק היופי שבקרמיקה.
+                </p>
+            </div>
+            <!-- תוכן נלווה -->
+            <aside class="sidecard" aria-label="שעות פעילות">
+                <h3>שעות פעילות</h3>
+                <ul class="hours">
+                    <li><span>א׳–ה׳</span> <span>10:00–18:00</span></li>
+                    <li><span>ו׳</span> <span>09:00–13:00</span></li>
+                    <li><span>שבת</span> <span>סגור</span></li>
+                </ul>
+                <p class="hint">ביקור בסטודיו בתיאום מראש.</p>
+            </aside>
+        </div>
+    </section>
+</main>
+<!-- ===== כותרת תחתונה ===== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>אדמה · סטודיו לקרמיקה</h3>
+            <p>קרמיקה בעבודת יד, סדנאות והזמנות אישיות.</p>
+        </div>
+        <nav aria-label="ניווט תחתון">
+            <h3>ניווט</h3>
+            <ul>
+                <li><a href="gallry.html">הגלריה</a></li>
+                <li><a href="workShops.html">סדנאות</a></li>
+                <li><a href="aboutUs.html">אודות</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h3>יצירת קשר</h3>
+            <!-- החליפו בפרטים האמיתיים -->
+            <p>
+                טלפון: <a href="tel:+972500000000">050-000-0000</a><br />
+                דוא״ל: <a href="mailto:hello@adama-studio.co.il">hello@adama-studio.co.il</a>
+            </p>
+        </div>
+    </div>
+    <p class="footer-bottom">© 2026 אדמה · סטודיו לקרמיקה. כל הזכויות שמורות.</p>
+</footer>
+</body>
+</html>
