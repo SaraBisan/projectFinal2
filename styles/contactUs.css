@@ -1,7 +1,4 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+﻿body {
     background-color: #efefe9;
 }
 /* ----- כותרת עליונה ----- */
@@ -81,6 +78,7 @@
     max-width: 640px;
     margin-right: auto;    /* יחד עם margin-left: auto */
     margin-left: auto;     /* ממרכזים את הטופס באמצע */
+    margin-bottom: 3rem;
 }
 .field { margin-bottom: 1.2rem; }
 .field label { display: block; font-weight: 600; margin-bottom: 0.35rem; }

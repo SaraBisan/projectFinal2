@@ -4,6 +4,9 @@
     margin: 0 auto;
     direction: rtl;
 }
+#sitemap-page {
+    padding-bottom: 2rem;
+}
 /* ----- מפת האתר ----- */
 .sitemap-tree {
     margin-top: 1rem;

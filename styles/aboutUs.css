@@ -38,6 +38,8 @@
 /* תפריט ניווט ראשי — צף לשמאל, פריטים זה לצד זה */
 .main-nav {
     float: left;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 .main-nav ul {
     direction: rtl;     /* כאן — זה מה שקובע את סדר הפריטים */
@@ -65,6 +67,9 @@
     color: #fbf8f3;
 }
 /* ----- פריסה: טקסט + תוכן נלווה (aside) ----- */
+.section {
+    background-color: #efefe9;
+}
  .with-aside {
     width:auto;
     background-color: #efefe9;
@@ -149,6 +154,29 @@
 .hint {
     font-size: 0.9rem;
 
+}
+.hit-logo {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    background-color: #f0efe8;
+    height: 200px;
+}
+.hit-logo img {
+    height: 80px;
+    width: auto;
+    display: inline-block;
+}
+.hit-logo p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+.hit-logo a {
+    color: #46685e;
+    text-decoration: none;
+}
+.hit-logo a:hover {
+    color: #b06a4b;
 }
 /*footer*/
 .site-footer {

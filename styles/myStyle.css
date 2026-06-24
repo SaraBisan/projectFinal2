@@ -77,14 +77,16 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
+    
+    
 }
 
 .hero-inner {
     display: flex;
-    flex-direction: row-reverse;   /* ← זה מה שמהפך את הסדר */
+    flex-direction: row;  /* ← זה מה שמהפך את הסדר */
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 80px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
@@ -93,10 +95,9 @@
 
 /* טור הטקסט — מימין */
 .hero-text {
-    float: right;
-    width: 40%;
+    width: 100%;
     text-align: right;
-    margin: 5rem 5rem;
+    margin: 0 ;
 }
 
 .hero-text h1 {
@@ -142,14 +143,14 @@
 
 /* טור הסרטון — משמאל */
 .hero-img {
-    float: left;
+    margin-right: 15rem;     /* דוחף את הסרטון ימינה, מרחיק אותו מהקצה השמאלי */
     width: 48%;
 }
 
 /* זה החוק שמקטין את הסרטון לרוחב הטור */
 
 .hero-video {
-    width: 320px;               /* האגרטל אובייקט בודד, אז גודל קבוע נראה טוב */
+    width: 320px; /* האגרטל אובייקט בודד, אז גודל קבוע נראה טוב */
     height: auto;
     pointer-events: none;
 }
@@ -194,6 +195,9 @@
 }
 
 /* ----- כרטיסים (שלושה טורים עם float) ----- */
+#home-content {
+    padding: 1rem 0;
+}
 .cards {
     margin-top: 1.5rem;
 }
@@ -230,10 +234,9 @@
 /* ----- פריסה דו-טורית עם תוכן נלווה (aside) ----- */
 .with-aside .prose {
     float: none;
-    width: 40%;
-    max-width: 1100px;
-    margin: 2rem auto;
-    margin-left: 50rem;
+    max-width: 700px;
+    margin: 0 auto;        /* ממרכז את כל הבלוק */
+    text-align: center;
 }
 .with-aside .sidecard {
     float: none;
@@ -259,6 +262,9 @@
 }
 
 /* ----- רשימת שעות הפעילות ----- */
+.hours {
+    list-style: none;  
+}
 .hours li {
     padding: 0.3rem 0;
     border-bottom: 1px dashed #d6c9b6;

@@ -85,6 +85,13 @@
     border-radius: 8px;
     padding: 1rem;
 }
+/* עיצוב כרטיסים זוגיים / אי-זוגיים (nth-child) */
+.cards-row .slide-card:nth-child(odd) {
+    border-color: #5e8b7e;
+}
+.cards-row .slide-card:nth-child(even) {
+    border-color: #b06a4b;
+}
 .slide-card img {
     display: block;
     width: 100%;
